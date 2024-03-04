@@ -1,11 +1,19 @@
+@font-face {
+  font-family: "TechnoRaceItalic";
+  src: local("TechnoRaceItalic"), url("./TechnoRaceItalic.otf") format("opentype");
+}
+
 body {
+  font-family: "TechnoRaceItalic";
   background-color: darkgrey;
 }
+
 .app {
   display: flex;
   padding: 13px;
   padding-top: 60px;
   justify-content: center;
+  position: relative;
 }
 
 .game {
@@ -22,9 +30,10 @@ body {
   height: 50px;
 }
 .restart-button {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  font-family: TechnoRaceItalic;
+  position: fixed;
+  bottom: 86px;
+  right: 53px;
   background-color: #3b3a3a;
   border: none;
   color: orange;
@@ -35,6 +44,7 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  /* line-height: 45px; */
   /* border-radius: 8px; */
 }
 
@@ -54,17 +64,19 @@ body {
   z-index: -1;
 } */
 .score-container {
+  
+  font-family: TechnoRaceItalic;
   position: absolute;
-  top: 10px;
+  top: 57px;
   right: 20px;
   background-color: #3b3a3a;
   border: none;
   color: orange;
-  padding: 15px 32px;
+  padding: 5px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 29px;
   margin: 4px 2px;
   width: 100px;
   /* height: 10px; */
@@ -75,5 +87,5 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: larger;
+  /* font-size: larger; */
 }

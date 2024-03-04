@@ -3,8 +3,8 @@ import React from "react";
 const ScoreBoard = ({ score, topScores }) => {
   return (
     <div className="score-container">
-      <div>Score: {score}</div>
-      <h2>High Scores</h2>
+      <h4>Score: {score}</h4>
+      <h4>High Scores:</h4>
       <ul>
         {topScores.map((score, index) => (
           <li key={index}>{score}</li>
